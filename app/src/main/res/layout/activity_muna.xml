@@ -7,6 +7,6 @@
     android:layout_height="match_parent"
     app:layout_behavior="@string/appbar_scrolling_view_behavior"
     tools:context="org.haxi.haroa.Muna"
-    tools:showIn="@layout/activity_muna"
+    tools:showIn="@layout/activity_muna">
 
 </android.support.constraint.ConstraintLayout>
