@@ -1,4 +1,8 @@
 <resources>
-    <string name="app_name">Haroa</string>
+    <string name="app_name">HaroA pp</string>
     <string name="action_settings">Settings</string>
+    <string name="send">Send</string>
+    <string name="munalabel">Seuraava</string>
+    <string name="munaviestilabel">viesti läpi</string>
+    <string name="edittitext">EI SAA KIRJOITTAA</string>
 </resources>

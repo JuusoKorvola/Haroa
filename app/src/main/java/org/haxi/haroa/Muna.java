@@ -1,5 +1,6 @@
 package org.haxi.haroa;
 
+import android.content.Intent;
 import android.os.Bundle;
 import android.support.design.widget.FloatingActionButton;
 import android.support.design.widget.Snackbar;
@@ -8,6 +9,7 @@ import android.support.v7.widget.Toolbar;
 import android.view.Menu;
 import android.view.MenuItem;
 import android.view.View;
+import android.widget.TextView;
 
 public class Muna extends AppCompatActivity {
 
@@ -15,17 +17,22 @@ public class Muna extends AppCompatActivity {
     protected void onCreate(Bundle savedInstanceState) {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_muna);
-        Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
-        setSupportActionBar(toolbar);
+        /*Toolbar toolbar = (Toolbar) findViewById(R.id.toolbar);
+        setSupportActionBar(toolbar);*/
 
-        FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
+        /*FloatingActionButton fab = (FloatingActionButton) findViewById(R.id.fab);
         fab.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 Snackbar.make(view, "IT'S A SECRET!!!!!!", Snackbar.LENGTH_INDEFINITE)
                         .setAction("Action", null).show();
             }
-        });
+        });*/
+
+        Intent tulevaIntent = getIntent();
+        String tulevaViesti = tulevaIntent.getStringExtra(Mane.EXTRA_MESSAGE);
+        TextView viestikentta = (TextView) findViewById(R.id.viesti);
+        viestikentta.setText(tulevaViesti);
     }
 
     @Override

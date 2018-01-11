@@ -19,6 +19,12 @@
                 <category android:name="android.intent.category.LAUNCHER" />
             </intent-filter>
         </activity>
+        <activity
+            android:name=".Muna"
+            android:label="@string/munalabel"
+            android:parentActivityName=".Mane">
+
+        </activity>
     </application>
 
 </manifest>
