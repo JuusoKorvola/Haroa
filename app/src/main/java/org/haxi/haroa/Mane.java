@@ -8,8 +8,14 @@ import android.support.v7.widget.Toolbar;
 import android.view.View;
 import android.view.Menu;
 import android.view.MenuItem;
+import android.widget.Button;
+import android.widget.TextView;
+
+import java.util.ArrayList;
 
 public class Mane extends AppCompatActivity {
+
+
 
     @Override
     protected void onCreate(Bundle savedInstanceState) {
@@ -24,6 +30,35 @@ public class Mane extends AppCompatActivity {
             public void onClick(View view) {
                 Snackbar.make(view, "Replace with your own action", Snackbar.LENGTH_LONG)
                         .setAction("Action", null).show();
+            }
+        });
+
+        final ArrayList<String> nappisanat = new ArrayList();
+        nappisanat.add("CUNT");
+        nappisanat.add("DICK");
+        nappisanat.add("COCK");
+        nappisanat.add("PUSSY");
+        nappisanat.add("BUTT");
+        nappisanat.add("ASS");
+        nappisanat.add("PRICK");
+        nappisanat.add("JESU CRISTO");
+        nappisanat.add("WATCH YOUR PROFANITY");
+
+
+
+        Button poopybutton = (Button) findViewById(R.id.poopybutton);
+        final TextView teksib = (TextView) findViewById(R.id.testiteksti);
+        poopybutton.setOnClickListener(new View.OnClickListener() {
+            int eka = 0;
+            @Override
+            public void onClick(View view) {
+                teksib.setText(nappisanat.get(eka));
+                if (eka < nappisanat.size() - 1){
+                    eka++;
+                }
+                else {
+                    eka = 0;
+                }
             }
         });
     }
