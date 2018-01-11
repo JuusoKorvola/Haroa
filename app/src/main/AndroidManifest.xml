@@ -21,9 +21,7 @@
         </activity>
         <activity
             android:name=".Muna"
-            android:label="@string/munalabel"
-            android:parentActivityName=".Mane">
-
+            android:label="@string/munalabel">
         </activity>
     </application>
 
