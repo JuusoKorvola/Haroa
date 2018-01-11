@@ -2,8 +2,10 @@
 <project version="4">
   <component name="ProjectModuleManager">
     <modules>
-      <module fileurl="file://$PROJECT_DIR$/Haroa.iml" filepath="$PROJECT_DIR$/Haroa.iml" />
+      <module fileurl="file://C:\Users\Miika\AndroidStudioProjects\Haroa pp\Haroa.iml" filepath="C:\Users\Miika\AndroidStudioProjects\Haroa pp\Haroa.iml" />
+      <module fileurl="file://$PROJECT_DIR$/Haroa pp.iml" filepath="$PROJECT_DIR$/Haroa pp.iml" />
       <module fileurl="file://$PROJECT_DIR$/app/app.iml" filepath="$PROJECT_DIR$/app/app.iml" />
+      <module fileurl="file://C:\Users\Miika\AndroidStudioProjects\Haroa pp\app\app.iml" filepath="C:\Users\Miika\AndroidStudioProjects\Haroa pp\app\app.iml" />
     </modules>
   </component>
 </project>
