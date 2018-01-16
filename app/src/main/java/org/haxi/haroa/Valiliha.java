@@ -38,4 +38,6 @@ public class Valiliha extends AppCompatActivity {
         Intent uusintent = new Intent(this, Muna.class);
         startActivity(uusintent);
     }
+
+
 }
