@@ -34,15 +34,15 @@ public class Mane extends AppCompatActivity {
 
 
         final ArrayList<String> nappisanat = new ArrayList();
+        nappisanat.add("BUTT");
+        nappisanat.add("PUSSY");
+        nappisanat.add("COCK");
         nappisanat.add("CUNT");
         nappisanat.add("DICK");
-        nappisanat.add("COCK");
-        nappisanat.add("PUSSY");
-        nappisanat.add("BUTT");
         nappisanat.add("ASS");
         nappisanat.add("PRICK");
         nappisanat.add("JESU CRISTO");
-        nappisanat.add("WATCH YOUR PROFANITY");
+        nappisanat.add("WATCH YOUR PROFANITY!");
 
 
 
@@ -61,7 +61,7 @@ public class Mane extends AppCompatActivity {
                     eka = 0;
                 }
                 painetut++;
-                if (painetut > 24){
+                if (painetut > 18){
                     hiddenb.setVisibility(View.VISIBLE);
                 }
                 Log.d("painettuja korotettu",Integer.toString(painetut));
