@@ -25,6 +25,12 @@ public class Mane extends AppCompatActivity {
 
         final Button hiddenb = (Button) findViewById(R.id.hiddenb);
         hiddenb.setVisibility(View.GONE);
+        hiddenb.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchValiActivity();
+            }
+        });
 
 
         final ArrayList<String> nappisanat = new ArrayList();
@@ -85,8 +91,8 @@ public class Mane extends AppCompatActivity {
         return super.onOptionsItemSelected(item);
     }
 
-    public void launchMunaActivity(View view) {
-        Intent uusintent = new Intent(this, Muna.class);
-        startActivity(uusintent);
+    public void launchValiActivity() {
+        Intent valiintent = new Intent(this, Valiliha.class);
+        startActivity(valiintent);
     }
 }
