@@ -5,10 +5,13 @@ import android.content.Intent;
 import android.hardware.SensorManager;
 import android.os.Bundle;
 
+import android.os.Handler;
 import android.util.Log;
 import android.view.OrientationEventListener;
+import android.view.View;
 import android.view.Window;
 import android.view.WindowManager;
+import android.widget.Button;
 import android.widget.TextView;
 
 public class Muna extends Activity {
@@ -22,12 +25,18 @@ public class Muna extends Activity {
                 WindowManager.LayoutParams.FLAG_FULLSCREEN);
         setContentView(R.layout.activity_muna);
 
+        final Button nextbutton = (Button) findViewById(R.id.nextbutton);
+        nextbutton.setVisibility(View.GONE);
+
+        final TextView hint = (TextView) findViewById(R.id.hinttext);
+        hint.setVisibility(View.GONE);
+
         orient = new OrientationEventListener(this, SensorManager.SENSOR_DELAY_NORMAL) {
             @Override
             public void onOrientationChanged(int i) {
                 Log.d("Orientaatio", String.valueOf(i));
                 if (i == 270) {
-                    Log.d("Orientaatio", "NAPPULA ESIIN");
+                    nextbutton.setVisibility(View.VISIBLE);
                 }
             }
         };
@@ -40,10 +49,30 @@ public class Muna extends Activity {
             orient.disable();
         }
 
+        Handler handel = new Handler();
+        handel.postDelayed(new Runnable() {
+            @Override
+            public void run() {
+                hint.setVisibility(View.VISIBLE);
+            }
+        },10000);
+
+        nextbutton.setOnClickListener(new View.OnClickListener() {
+            @Override
+            public void onClick(View view) {
+                launchWaitActivity();
+            }
+        });
+
     }
 
     @Override
     public void onBackPressed() {
 
+    }
+
+    public void launchWaitActivity() {
+        Intent intent = new Intent(this, Wait.class);
+        startActivity(intent);
     }
 }

@@ -5,4 +5,9 @@
     <string name="alkuteksti">Push but00ton!</string>
     <string name="poopybutton">poopybutton</string>
     <string name="kyssaributton">\?</string>
+    <string name="sorrytext">
+        Sorry. This screen contains no harsh language or funny buttons.
+        It\'s just a blank screen with horizontally scrolling text containing no useful information.
+        Apparently only way to be transferred to next screen is to wait 436 seconds. Sorry.
+    </string>
 </resources>
