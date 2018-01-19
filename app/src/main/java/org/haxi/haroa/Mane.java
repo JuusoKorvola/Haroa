@@ -85,6 +85,7 @@ public class Mane extends AppCompatActivity {
 
         //noinspection SimplifiableIfStatement
         if (id == R.id.action_settings) {
+            Log.d("ASDASD", "Settingsi painetu");
             return true;
         }
 

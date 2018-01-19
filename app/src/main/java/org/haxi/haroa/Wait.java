@@ -34,7 +34,7 @@ public class Wait extends Activity {
 
         //Pitkän tekstin scroll animaatio
         TextView scrolling = (TextView) findViewById(R.id.scrolling);
-        Animation scroll = new TranslateAnimation(1500,-6500,0,0);
+        Animation scroll = new TranslateAnimation(1500,-7500,0,0);
         scroll.setDuration(30000);
         scroll.setFillAfter(true);
         scroll.setInterpolator(new LinearInterpolator());
@@ -54,11 +54,11 @@ public class Wait extends Activity {
 
                     @Override
                     public void onFinish() {
-                        timeri.setText("DONE");
+                        nextActivity();
                     }
                 }.start();
             }
-        }, 23000);
+        }, 25000);
 
         //Toasti tekstien alustus ja tuominen esille 35 sekunnin kuluttua
         final ArrayList<String> suggestions = new ArrayList<>();
