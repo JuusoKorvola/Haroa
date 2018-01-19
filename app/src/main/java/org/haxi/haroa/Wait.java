@@ -58,7 +58,7 @@ public class Wait extends Activity {
                     }
                 }.start();
             }
-        }, 25000);
+        }, 23000);
 
         //Toasti tekstien alustus ja tuominen esille 35 sekunnin kuluttua
         final ArrayList<String> suggestions = new ArrayList<>();
@@ -72,7 +72,7 @@ public class Wait extends Activity {
         run2 = new Runnable() {
             @Override
             public void run() {
-                new CountDownTimer(15000, 5000) {
+                new CountDownTimer(16000, 5000) {
                     int index = 0;
                     @Override
                     public void onTick(long millisUntilFinished) {
@@ -217,7 +217,7 @@ public class Wait extends Activity {
         handeli.postDelayed(new Runnable() {
             @Override
             public void run() {
-                new CountDownTimer(15000, 5000) {
+                new CountDownTimer(16000, 5000) {
                     int index = 0;
                     @Override
                     public void onTick(long millisUntilFinished) {
