@@ -240,7 +240,7 @@ public class Wait extends Activity {
 
     private void nextActivity() {
         delay2.removeCallbacks(run2);
-        Intent intent = new Intent(this, Mane.class);
+        Intent intent = new Intent(this, kamera.class);
         startActivity(intent);
     }
 }
